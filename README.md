@@ -16,8 +16,10 @@ All the technologies [that will be] used in the project.
 
 ## Frontend
 
-- [ ] Tauri
-- [ ] React
+- [x] Tauri
+- [x] React
+- [x] Next.js
+- [x] Tailwind
 
 ## Backend
 
