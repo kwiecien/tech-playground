@@ -20,12 +20,17 @@ All the technologies [that will be] used in the project.
 - [x] React
 - [x] Next.js
 - [x] Tailwind
+- [ ] WebSocket
 
 ## Backend
 
 - [ ] Java
 - [ ] Hibernate
 - [ ] Flyway
+- [ ] Project Reactor
+- Spring
+  - [ ] Spring Cloud Sleuth
+  - [ ] Spring Cloud Contract
 
 ## DevOps
 
@@ -38,3 +43,6 @@ All the technologies [that will be] used in the project.
 
 - [ ] Conventional Commits
 - [x] Architectural Decision Records
+- Tests
+  - [ ] Contract tests
+  - [ ] Integration tests
