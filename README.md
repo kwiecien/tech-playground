@@ -37,4 +37,4 @@ All the technologies [that will be] used in the project.
 ## Others
 
 - [ ] Conventional Commits
-- [ ] Architectural Decision Records
+- [x] Architectural Decision Records
