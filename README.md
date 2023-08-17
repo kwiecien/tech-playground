@@ -28,6 +28,7 @@ All the technologies [that will be] used in the project.
 - [ ] Hibernate
 - [ ] Flyway
 - [ ] Project Reactor
+- [ ] Akka
 - Spring
   - [ ] Spring Cloud Sleuth
   - [ ] Spring Cloud Contract
@@ -46,3 +47,4 @@ All the technologies [that will be] used in the project.
 - Tests
   - [ ] Contract tests
   - [ ] Integration tests
+  - [ ] Mutation tests
