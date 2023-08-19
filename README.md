@@ -42,7 +42,7 @@ All the technologies [that will be] used in the project.
 
 ## Others
 
-- [ ] Conventional Commits
+- [x] Conventional Commits
 - [x] Architectural Decision Records
 - Tests
   - [ ] Contract tests
