@@ -1,4 +1,4 @@
-const API_KEY = "";
+const API_KEY = process.env.NEXT_PUBLIC_OPEN_WEATHER_API_KEY;
 
 const wroclaw = {
   latitude: 51.1079,
@@ -41,6 +41,8 @@ export default async function Weather() {
     `https://api.openweathermap.org/data/2.5/weather?lat=${wroclaw.latitude}&lon=${wroclaw.longitude}&units=metric&appid=${API_KEY}`
   );
   const data = (await response.json()) as OpenWeatherMapResponse;
+  if (!response.ok) return <p>{JSON.stringify(data)}</p>;
+
   const weatherForecast = `You are in ${data.name}. It feels like ${data.main.feels_like}°C.`;
-  return <p>{weatherForecast}</p>;
+  return <p>{"Server: " + weatherForecast}</p>;
 }

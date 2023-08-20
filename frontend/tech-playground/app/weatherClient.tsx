@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from "react";
 
-const API_KEY = "";
+const API_KEY = process.env.NEXT_PUBLIC_OPEN_WEATHER_API_KEY;
 
 const wroclaw = {
   latitude: 51.1079,
@@ -20,5 +20,5 @@ export const WeatherClient = () => {
       .then((data) => setWeather(data));
   }, []);
 
-  return <p>{JSON.stringify(weather)}</p>;
+  return <p>{"Client: " + JSON.stringify(weather)}</p>;
 };
