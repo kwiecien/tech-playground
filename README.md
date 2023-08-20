@@ -21,6 +21,7 @@ All the technologies [that will be] used in the project.
 - [x] Next.js
 - [x] Tailwind
 - [ ] WebSocket
+- [ ] XState
 
 ## Backend
 
@@ -47,4 +48,4 @@ All the technologies [that will be] used in the project.
 - Tests
   - [ ] Contract tests
   - [ ] Integration tests
-  - [ ] Mutation tests
+  - [ ] Mutation testing
