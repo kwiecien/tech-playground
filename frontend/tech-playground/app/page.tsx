@@ -1,6 +1,6 @@
 import Image from "next/image";
-import Weather from "./weather";
-import { WeatherClient } from "./weatherClient";
+import { WeatherServer } from "./weather/weatherServer";
+import { WeatherClient } from "./weather/weatherClient";
 
 export default function Home() {
   return (
@@ -15,7 +15,7 @@ export default function Home() {
           priority
         />
       </div>
-      <Weather />
+      <WeatherServer />
       <WeatherClient />
     </main>
   );
