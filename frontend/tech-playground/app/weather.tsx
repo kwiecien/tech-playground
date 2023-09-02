@@ -37,8 +37,10 @@ const EXAMPLE_RESPONSE = {
 type OpenWeatherMapResponse = typeof EXAMPLE_RESPONSE;
 
 export default async function Weather() {
+  const TEN_MINUTES = 600;
   const response = await fetch(
-    `https://api.openweathermap.org/data/2.5/weather?lat=${wroclaw.latitude}&lon=${wroclaw.longitude}&units=metric&appid=${API_KEY}`
+    `https://api.openweathermap.org/data/2.5/weather?lat=${wroclaw.latitude}&lon=${wroclaw.longitude}&units=metric&appid=${API_KEY}`,
+    { next: { revalidate: TEN_MINUTES } }
   );
   const data = (await response.json()) as OpenWeatherMapResponse;
   if (!response.ok) return <p>{JSON.stringify(data)}</p>;
