@@ -25,7 +25,7 @@ All the technologies [that will be] used in the project.
 
 ## Backend
 
-- [ ] Java
+- [x] Java
 - [ ] Hibernate
 - [ ] Flyway
 - [ ] Project Reactor
